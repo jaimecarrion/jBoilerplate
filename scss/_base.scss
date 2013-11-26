@@ -1,0 +1,29 @@
+/******************************************
+LOAD MIXINS
+******************************************/
+@import "mixins";
+
+/******************************************
+CUSTOM 
+******************************************/
+@import "fonts";
+@import "colors";
+@import "variables";
+@import "font-awesome/font-awesome";
+
+
+#size-detector {
+	background-color: $ColorMain;
+	display: block;
+	width: 100%;
+	color: $ColorMainInverse;
+	text-align: center;
+	padding: 10px;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	z-index: 999;
+	&:before {
+		content: "Less than 480px";
+	}
+}

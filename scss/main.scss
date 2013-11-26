@@ -1,0 +1,39 @@
+/* ==========================================================================
+   LOAD SASS FILES DEPENDING ON SCREEN SIZE
+   ========================================================================== */
+
+/* Extra small devices (phones, up to 480px) */
+/* No media query since this is the default in Bootstrap */
+@import "base";
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	@import "768up";
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	@import "992up";
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	@import "1200up";
+}
+
+/* RETINA (2x RESOLUTION DEVICES) */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	only screen and (min--moz-device-pixel-ratio: 1.5),
+	only screen and (min-device-pixel-ratio: 1.5) {
+	@import "2x";
+}
+
+/*iPHONE 5 MEDIA QUERY */
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+	@import "iphone5";
+}
+
+/* PRINT STYLESHEET */
+@media print {
+	@import "print";
+}
