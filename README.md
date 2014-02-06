@@ -27,6 +27,6 @@ Variables set up for page titles and meta tags
 
 #Content log
 
-Bootstrap 3.0.2
+Bootstrap 3.1.0
 
 Fontawesome 4.0.3
